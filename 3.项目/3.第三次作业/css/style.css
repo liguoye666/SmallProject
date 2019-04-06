@@ -1,0 +1,55 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+a { text-decoration: none; color: #000; }
+body { font-family: Microsoft YaHei; min-width: 1200px; }
+li { list-style: none; }
+.fl { float: left; }
+.fr { float: right; }
+.container { width: 1264px; margin: 0 auto; }
+.dropdown { position: relative; }
+.icon { overflow: hidden; width: 1em; height: 1em; vertical-align: -.15em; fill: currentColor; }
+
+/* 页头样式 */
+.header { border-bottom: 2px solid rgb(36, 135, 201); background-color: #efefef; }
+.header .container { height: 126px; }
+.header-logo { position: relative; top: 50%; float: left; margin-top: -57px; }
+.header-caption { line-height: 122px; float: left; }
+.header-caption-word { font-size: 26px; padding: 0 10px; color: black; border-right: 3px solid #000; }
+.header-caption-service { padding: 0 10px; vertical-align: top; color: #666; }
+.header-welcome { line-height: 126px; float: right; }
+.header-welcome a:hover { color: red; }
+.header-welcome-website { margin: 0 15px 0 10px; color: rgb(251, 116, 3); }
+.header-welcome-login { color: rgb(251, 116, 3); }
+.header-welcome-dropdown { margin: 0 15px; }
+.header-welcome-dropdown-layer { position: absolute; top: 85px; left: 10px; display: none; width: 150px; padding: 15px 10px; border: 1px solid rgb(251, 116, 3); background: #fff; }
+.header-welcome-dropdown-layer .menu-item { font-size: 12px; line-height: 29px; display: block; padding: 0 0 0 10px; color: #666; }
+.header-welcome-dropdown-layer .underline { border-bottom: 1px dashed #666; }
+.header-welcome-phone { margin: 0 30px 0 35px; padding: 0 20px; background: url(../image/phone.png) no-repeat left center; background-size: 16px 23px; }
+
+/* 主体样式 */
+.main { height: 800px; background: #fff; }
+.main-caption { line-height: 46px; }
+.main-caption span { color: #636363; }
+.main-content { width: 100%; height: 630px; }
+.main-content-wrap-title { line-height: 43px; padding: 0 18px; color: #fff; background: rgb(251, 116, 3); }
+.main-content-wrap-information { padding: 52px 0 78px 286px; text-align: left; border: 1px solid rgb(251, 116, 3); border-top: none; }
+.main-content-item { position: relative; }
+.main-content-item .important { color: #ff96b7; }
+.main-content-item label { display: inline-block; width: 85px; }
+.main-content-item input, .main-content-item select { width: 210px; height: 21px; }
+.main-content-item .item_ { font-size: 14px; padding: 0 10px; color: rgb(251, 116, 3); }
+.main-content-item .rule { cursor: pointer; text-decoration: underline; }
+.main-content-item .rule:hover + .rule-content { display: block; }
+.main-content-item .rule-content { font-size: 12px; line-height: 36px; position: absolute; z-index: 2; top: 17px; right: 65px; display: none; width: 500px; padding: 5px 15px 15px 15px; border: 1px solid #006ee1; background: #fff; }
+.main-content-item .block { padding: 0 10px; }
+.main-content-item .block_ { display: inline-block; width: 42px; height: 7px; background: #ddd; }
+.main-content-item .block_:first-child { background: red; }
+.main-content-item p.item_ { margin-left: 95px; padding-top: 5px; }
+.main-content-end { margin-left: 95px; }
+.main-content-end .word { color: #006ee1; }
+.main-content-handup { display: block; width: 231px; height: 37px; margin-top: 66px; margin-left: 134px; cursor: pointer; color: #fff; border: none; border-radius: 7px; outline: none; background: rgb(251, 116, 3); }
+.main-content-handup:hover { background: red; }
+
+/* 页脚样式 */
+.footer { border-top: 2px solid rgb(36, 135, 201); background-color: #dcdcdc; }
+.footer .container { height: 106px; padding: 22px 0; text-align: center; color: #a19999; }
+.footer-item { line-height: 36px; }

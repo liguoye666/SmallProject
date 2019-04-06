@@ -1,0 +1,59 @@
+* { box-sizing: border-box; margin: 0; padding: 0; list-style: none; }
+a { text-decoration: none; }
+body { font-family: '宋体'; font-size: 16px; max-width: 9.8rem; margin: 0 auto; }
+
+/* 第一区域 */
+.one { padding-bottom: 1.7rem; background: #b2c5cc; }
+.one .nav { display: flex; width: 50%; height: 1rem; margin: 0 auto; justify-content: space-around; align-items: center; }
+.one .nav .item { color: #757575; }
+.one .nav .item.active { color: #afafaf; }
+.one .menu { line-height: .8rem; position: relative; z-index: 2; height: .8rem; text-align: center; color: #fff; background: #7ea6b1; }
+.one .menu button { position: absolute; top: 50%; right: 0; width: .25rem; height: .25rem; margin-top: -.125rem; margin-right: .26rem; border: 1px solid #afcad6; outline: none; background: #7ea6b1; }
+.one .menu-list { position: absolute; top: -3.2rem; width: 100%; text-align: center; color: #fff; background: #7ea6b1; }
+.one .menu-list-item { line-height: .8rem; height: .8rem; border-bottom: 1px solid #afcad6; }
+.one .main { margin-top: .7rem; text-align: center; }
+.one .main img { width: 1.45rem; height: 1.45rem; }
+.one .main p { margin: .35rem 0 .6rem 0; color: #fff; }
+.one .main button { font-size: .18rem; width: 1.65rem; height: .50rem; cursor: pointer; border: none; background: #fff; }
+
+/* 第二区域 */
+.two { display: flex; height: .8rem; border-bottom: 1px solid #ddd; }
+.two .item { display: flex; color: #bababa; flex: 1; align-items: center; justify-content: center; }
+.two .item.active { color: #545454; }
+
+/* 第三区域 */
+.three { padding: 1.09rem 2.10rem 1.07rem 2.10rem; text-align: center; }
+.three .title { font-size: 24px; color: #545454; }
+.three .content { line-height: 1.5em; margin-top: .3rem; text-align: left; color: #bababa; }
+
+/* 第四区域 */
+.four { display: flex; height: .76rem; padding: 0 .55rem; color: #686868; background: #f4f4f4; justify-content: space-between; align-items: center; }
+.four .word { font-size: 22px; }
+.four .link a { color: #000; }
+
+/* 第五区域 */
+.five { padding: .75rem .5rem .66rem .5rem; background: url(../img/bg.jpg) left center no-repeat; background-size: 100% 100%; }
+.five .title { font-size: 22px; text-align: left; color: #686868; }
+.five .content { display: flex; flex-wrap: wrap; justify-content: space-between; align-content: center; }
+.five .content img { width: 2.8rem; height: 2.39rem; margin-top: .25rem; }
+
+/* 第六区域 */
+.six { line-height: .65rem; height: .65rem; text-align: center; background: #f1f1f1; }
+
+/* ipad设备上的 */
+@media screen and (min-width:681px) {
+	.one .menu,
+	.one .menu-list { display: none; }
+}
+
+/* iphone设备上 */
+@media screen and (max-width:680px) {
+	body { font-size: 14px; }
+	.one .nav { display: none; }
+	.three .title { font-size: 16px; }
+	.three .content { font-size: 12px; }
+	.four .word { font-size: 16px; }
+	.five .title { font-size: 16px; }
+	.four { flex-direction: column; height: 1.2rem; padding: .18rem 0; color: #686868; background: #f4f4f4; justify-content: center; align-items: center; }
+	.five .content img { width: 4.29rem; height: 2.4rem; margin-top: .25rem; }
+}

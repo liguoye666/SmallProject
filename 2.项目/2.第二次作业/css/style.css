@@ -1,0 +1,98 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/* 铺满整个屏幕 */
+html,
+body {
+	height: 100%;
+}
+
+/* 天空 样式 */
+.sky {
+	width: 100%;
+	height: 60%;
+	background: linear-gradient(rgb(196, 228, 253), white);
+}
+
+/* 草地 样式 */
+.grass {
+	width: 100%;
+	height: 40%;
+	background: linear-gradient(white, rgb(148, 190, 89));
+}
+
+/* 白云 统一样式 */
+.cloud {
+	position: absolute;
+	width: 99px;
+	height: 35px;
+	border: 1px solid #fff;
+	border-radius: 30px /25px 25px 25px 25px;
+	background-color: #fff;
+}
+
+/* 白云左边 */
+.cloud:before {
+	position: absolute;
+	top: -12px;
+	left: 7px;
+	display: block;
+	width: 46px;
+	height: 48px;
+	content: '';
+	transform: rotate(-40deg);
+	border: 1px solid #fff;
+	border-radius: 35px / 40px 35px 35px 30px;
+	background-color: #fff;
+}
+
+/* 白云右边 */
+.cloud:after {
+	position: absolute;
+	top: -24px;
+	left: 36px;
+	display: block;
+	width: 55px;
+	height: 59px;
+	content: '';
+	border: 1px solid #fff;
+	border-radius: 50px / 50px 50px 40px 40px;
+	background-color: #fff;
+}
+
+/* 从左到右 第一朵白云 */
+.cloud:nth-child(1) {
+	top: 4%;
+	left: 40%;
+	transform: scale(.8);
+}
+
+/* 从左到右 第二朵白云 */
+.cloud:nth-child(2) {
+	top: 18%;
+	left: 44%;
+	transform: scale(.8);
+}
+
+/* 从左到右 第三朵白云 */
+.cloud:nth-child(3) {
+	top: 11%;
+	left: 51%;
+}
+
+/* 从左到右 第四朵白云 */
+.cloud:nth-child(4) {
+	top: 17%;
+	left: 59%;
+	transform: scale(.6);
+}
+
+/* 从左到右 第五朵白云 */
+.cloud:nth-child(5) {
+	top: 5%;
+	left: 72%;
+	transform: scale(.8);
+}

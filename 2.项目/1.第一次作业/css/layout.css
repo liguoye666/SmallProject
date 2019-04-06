@@ -1,0 +1,24 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Microsoft YaHei UI; }
+a { text-decoration: none; }
+
+/* 顶部 */
+header { position: relative; height: 95px; background: #2e2e2e; }
+
+/* banner区 */
+section.banner { position: relative; height: 676px; }
+
+/* Portfolio区 */
+section.portfolio { padding-top: 115px; }
+
+/* stats区 */
+section.stats { padding: 120px 0 110px 0; }
+
+/* Team区 */
+section.team { padding: 115px 0 94px 0; background: #2e2e2e; }
+
+/* Contact Us */
+section.contact { padding: 114px 0 108px 0; }
+
+/* 页脚区 */
+footer { height: 110px; background: #2e2e2e; }
